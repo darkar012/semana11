@@ -39,8 +39,28 @@ class colPublicaciones {
     component.appendChild(answerBlock);
 
     let ContRes = document.createElement("div");
-    
+    ContRes.className = "answerCont";
+    let us = this.user.id;
+
+    database.ref("usuarios/comments").on("value", function (data) {
+      ContRes.innerHTML = "";
+      data.forEach((comentario) => {
+        let valor = comentario.val();
+        if (us == valor.id) {
+          let answerCont = document.createElement("div");
+          answerCont.className = "ansCont";
+          answerCont.innerHTML = valor.comentario;
+          ContRes.appendChild(answerCont);
+          component.appendChild(ContRes);
+        }
+      });
+    });
+
     ansBtn.addEventListener("click", () => {
+        if (answer.value == "") {
+            alert("Hay un campo vacio");
+            return;
+          }
       const database = firebase.database();
       let reference = database.ref("usuarios/comments").push();
       let comentario = {
@@ -49,24 +69,8 @@ class colPublicaciones {
       };
       reference.set(comentario);
       answer.value = "";
-      ContRes.value = "";
     });
-    let us = this.user.id;
-
-    database.ref("usuarios/comments").on("value", function (data) {
-        data.forEach((comentario) => {
-          let valor = comentario.val();          
-          if (us == valor.id){
-            let answerCont = document.createElement("div");
-            answerCont.className = "ansCont";
-            answerCont.innerHTML = valor.comentario;
-            ContRes.appendChild(answerCont);
-            component.appendChild(ContRes);
-          }
-        });
-      });
 
     return component;
   };
-
 }

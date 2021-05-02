@@ -98,13 +98,13 @@ h2 {
 }
 
 .fechaCont {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-family:"Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .userName {
@@ -117,7 +117,6 @@ h2 {
 }
 
 .publicCont {
-
   width: 80%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -150,5 +149,20 @@ h2 {
 }
 
 .ansBtn:hover {
-    background-color: #3b939b;
+  background-color: #3b939b;
+}
+
+.answerCont {
+  text-align: left;
+  width: 100%;
+  border-color: black;
+  border-bottom: 20px;
+}
+
+.ansCont {
+  padding: 5px;
+  margin: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
 }
