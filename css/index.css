@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 34px;
+  color: darkslategray;
+}
+
+body {
+  background-color: aliceblue;
+  background-image: url(https://biddown.com/wp-content/uploads/2020/03/4-41860_white-wallpaper-background-full-hd-background-white.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: darkslategray;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+#escribirPublicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+  align-items: center;
+}
+#escribirPublicacion input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(80, 82, 80, 0.4);
+  background-color: rgb(230, 240, 250);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+#escribirPublicacion textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(80, 82, 80, 0.4);
+  background-color: rgb(230, 240, 250);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+#escribirPublicacion button {
+  background-color: #617387;
+  border: none;
+  color: white;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 4px 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#escribirPublicacion button:hover {
+  background-color: #3b939b;
+}
+
+#publiContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+  align-items: center;
+}
+
+.colPublicacion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  align-items: center;
+  background-color: rgb(230, 240, 250);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(80, 82, 80, 0.4);
+}
+
+.fechaCont {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family:"Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.userName {
+  text-align: right;
+  padding-right: 50px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.publicCont {
+
+  width: 80%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.answerBlock {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.answer {
+  width: 70%;
+  border-radius: 0px 0px 0px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ansBtn {
+  width: 30%;
+  border-radius: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #617387;
+  color: aliceblue;
+  border: none;
+}
+
+.ansBtn:hover {
+    background-color: #3b939b;
+}
